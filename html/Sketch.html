@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <link rel="stylesheet" type="text/css" href="../CSS/stylesheet3.css">
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="../JS/p5.min.js"></script>
+    <script src="../addons/p5.dom.min.js"></script>
+    
+    <script src="../JS/Fish.js"></script>
+    <script src="../JS/School.js"></script>
+    <script src="../JS/Coral.js"></script>
+    <script src="../JS/Ground.js"></script>
+    <script src="../JS/SeaFloor.js"></script>
+    <script src="../JS/EnergyBall.js"></script>
+    <script src="../JS/sketch.js"></script>
+  </head>
+  <body>
+    <div id = "particles-js"></div>
+    <script src="../addons/p5.particles.js"></script>
+    <script src="../addons/app.js"></script>
+    <div id = "year"> Year</div>
+    <div id = "endGameScreen">
+      <div id = "endGameText">
+        Your fish have died. This could have been prevented.
+      </div>
+      <div id = "EndButton"><button type="button" class="button" onclick=myFunction()>Continue</button></div>
+
+    </div>
+
+    <script>
+      function myFunction() {
+        window.open("EndPage.html","_self");
+      }
+      </script>
+
+
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../CSS/stylesheet2.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="../JS/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+
+      function drawChart() { //function to draw graphs using JQuery and Google Charts
+
+        var json = (function () {
+    var json = null;
+    $.ajax({ //loading the JSON file
+        'async': false,
+        'global': false,
+        'url': "../myFile.json",
+        'dataType': "json",
+        'success': function (data) {
+            json = data;
+        }
+    });
+    return json;
+})(); 
+
+        var years=[];
+        var coral=[];
+        var fish = [];
+
+        for(var i = 0; i < json.length; i ++){
+          years[i] = json[i].year;
+          coral[i] = json[i].coral;
+          fish[i] = json[i].fish;
+        }
+
+        var data = new google.visualization.DataTable();
+  data.addColumn('number', 'Years');
+  data.addColumn('number', 'Coral');
+
+  for(i = 0; i < years.length; i++)
+    data.addRow([years[i], coral[i]]);
+
+        var options = {
+          title: 'Coral Decline in Great Barrier Reef',
+          curveType: 'function',
+          vAxis: {
+          title: 'Total Coral Coverage (%)'
+        },
+          hAxis: {
+          title: 'Year',
+          format: '0000'
+        }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+        chart.draw(data, options);
+      
+
+
+      var data2 = new google.visualization.DataTable();
+  data2.addColumn('number', 'years');
+  data2.addColumn('number', 'fish');
+
+  for(i = 0; i < years.length; i++)
+    data2.addRow([years[i], fish[i]]);
+
+        var options2 = {
+          title: 'Overfishing',
+          curveType: 'function',
+          vAxis: {
+          title: 'Fish Species Collapsed (%)'
+        },
+          hAxis: {
+          title: 'Year',
+          format: '0000'
+        }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart2'));
+        chart.draw(data2, options2);
+      } 
+
+    </script>
+  </head>
+  <body>
+  <div id = "EndPageText"><p>Every year overfishing and coral bleaching result in loss of sea life and loss of coral cover.</p> <p>It's time to make a change.</p> </div>
+    <div>
+      <div class="chart" id="curve_chart" style="width: 50%; height: 475px; float: left"></div>
+      
+      <div class= "chart" id="curve_chart2" style="width: 50%; height: 475px; float: right"></div>
+    </div>
+
+    <div>
+        <div class = "lable" style="width: 50%; float: left; ">Source: “The 27–year decline of coral cover on the Great Barrier Reef and its causes,” by Glenn De’ath et al</div>
+        <div class = "lable" style="width: 50%; float: right;">Source: “Global Loss of Biodiversity Harming Ocean Bounty,” by Erik Stokstad</div>
+    </div>
+
+    <div style="width: 100%;">
+        <div id = "StartButton"><button type="button" class="button" onclick=Restart()>Restart</button></div>
+        <div id = "StartButton"><button type="button" class="button" onclick=Credits()>Credits</button></div>
+    </div>
+
+    <script>
+        function Restart() {
+          window.open("../index.html","_self")
+        }
+    </script>
+    <script>
+          function Credits() {
+            window.open("credits.html","_self")
+          }
+    </script>
+      
+  </body>
+</html>

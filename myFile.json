@@ -1,0 +1,214 @@
+[
+    {
+        "year": 1985,
+        "fish": 20,
+        "coral": 27
+    },
+    {
+      "year": 1986,
+      "fish": 20,
+      "coral": 26
+    },
+    {
+      "year": 1987,
+      "fish": 20.5,
+      "coral": 24
+    },
+    {
+      "year": 1988,
+      "fish": 21.5,
+      "coral":22.4
+    },
+    {
+      "year": 1989,
+      "fish": 22,
+      "coral": 20
+    },
+    {
+      "year": 1990,
+      "fish": 23,
+      "coral": 20
+    },
+    {
+      "year": 1991,
+      "fish": 24,
+      "coral": 21
+    },
+    {
+      "year": 1992,
+      "fish": 25,
+      "coral": 22
+    },
+    {
+      "year": 1993,
+      "fish": 25.6,
+      "coral": 23.2
+    },
+    {
+      "year": 1994,
+      "fish": 26,
+      "coral": 24.1
+    },
+    {
+      "year": 1995,
+      "fish": 26.3,
+      "coral": 25.3
+    },
+    {
+      "year": 1996,
+      "fish": 27,
+      "coral": 24.5
+    },
+    {
+      "year": 1997,
+      "fish": 27.8,
+      "coral": 24
+    },
+    {
+      "year": 1998,
+      "fish": 28,
+      "coral": 23.6
+    },
+    {
+      "year": 1999,
+      "fish": 28.6,
+      "coral": 23
+    },
+    {
+      "year": 2000,
+      "fish": 30,
+      "coral": 22.2
+    },
+    {
+      "year": 2001,
+      "fish": 32,
+      "coral": 21.6
+    },
+    {
+      "year": 2002,
+      "fish": 33,
+      "coral": 21.3
+    },
+    {
+      "year": 2003,
+      "fish": 35,
+      "coral": 20.6
+    },
+    {
+      "year": 2004,
+      "fish": 37,
+      "coral": 20
+    },
+    {
+      "year": 2005,
+      "fish": 38,
+      "coral": 19.4
+    },
+    {
+      "year": 2006,
+      "fish": 40,
+      "coral": 16
+    },
+    {
+      "year": 2007,
+      "fish": 41,
+      "coral": 14
+    },
+    {
+      "year": 2008,
+      "fish": 41.6,
+      "coral": 12
+    },
+    {
+      "year": 2009,
+      "fish": 43,
+      "coral": 11
+    },
+    {
+      "year": 2010,
+      "fish": 44,
+      "coral": 10
+    },
+    {
+      "year": 2011,
+      "fish": 47,
+      "coral": 9
+    },
+    {
+      "year": 2012,
+      "fish": 51,
+      "coral": 8.3
+    },
+    {
+      "year": 2013,
+      "fish": 53,
+      "coral": 8
+    },
+    {
+      "year": 2014,
+      "fish": 55,
+      "coral": 7.5
+    },
+    {
+      "year": 2015,
+      "fish": 58,
+      "coral": 7.1
+    },
+    {
+      "year": 2016,
+      "fish": 60,
+      "coral": 6.3
+    },
+    {
+      "year": 2017,
+      "fish": 63,
+      "coral": 5.8
+    },
+    {
+      "year": 2018,
+      "fish": 64.2,
+      "coral": 5.4
+    },
+    {
+      "year": 2019,
+      "fish": 65,
+      "coral": 5
+    },
+    {
+      "year": 2020,
+      "fish": 66,
+      "coral": 4.7
+    },
+    {
+      "year": 2021,
+      "fish": 66.5,
+      "coral": 4.1
+    },
+    {
+      "year": 2022,
+      "fish": 67,
+      "coral": 3.3
+    },
+    {
+      "year": 2023,
+      "fish": 68,
+      "coral": 2.8
+    },
+    {
+      "year": 2024,
+      "fish": 68.5,
+      "coral": 2.1
+    },
+    {
+      "year": 2025,
+      "fish": 70,
+      "coral": 1.5
+    },
+    {
+      "year": 2026,
+      "fish": 71,
+      "coral": 0
+    }
+
+    
+]
